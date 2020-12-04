@@ -1,13 +1,19 @@
 /*
 Escribir un programa que pase un nº de decimal a binario usando recursividad:
-
-
 */
+package pratical;
+
+import java.util.Scanner;
+
 public class Decimal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(calcularBinario(4));
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Introduc el numero");
+		int n = scanner.nextInt();
+		System.out.println(calcularBinario(n));
+		scanner.close();
 	}
 	
 	public static String calcularBinario(int decimal) {
